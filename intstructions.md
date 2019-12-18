@@ -1,6 +1,26 @@
 # jsOrrery
 
-This is a modification of jsOrrery, a Solar System / orbital mechanics simulation, or "orrery," written by https://github.com/mgvez in WebGL and Javascript.
+jsOrrery is a Solar System / orbital mechanics simulation, or orrery, that I wrote in WebGL and Javascript. The main feature of jsOrrery is that the planets positions are accurate in regards to the date you set, and it has the consequence that you can observe things that happen in the real Solar System.
+
+See the project live at [orrery.com] (http://orrery.com). Thanks to [@neave] (https://twitter.com/neave) for the domain :)
+
+# Usage
+
+The directory named `dist` contains the built app. The html file is an example of jsOrrery placed in a page. Basically, you link jsOrrery's js and css files in your HTML file and call the app.
+
+As soon as jsOrrery is loaded, it calls a function `window.onJsOrreryLoaded` if it exists, with JSOrrery class as param. JSOrrery is also accessible through the global `window.jsOrrery` variable. To init the app, you just create a new instance.
+
+```
+const jsOrrery = new JSOrrery();
+```
+
+## Options
+
+If you want to customize how jsOrrery behaves, you can pass a config object to its init method.
+
+## Building the app
+
+You can also use webpack to display the app in a local environment with `npm start`, which will then make the orrery available at http://localhost:2018. To build the js, you can run webpack directly in the terminal, for example `env NODE_ENV=production webpack`.
 
 # Credits
 

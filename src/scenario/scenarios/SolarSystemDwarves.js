@@ -1,4 +1,3 @@
-
 import { sun } from './bodies/sun';
 import { mercury } from './bodies/mercury';
 import { venus } from './bodies/venus';
@@ -14,30 +13,32 @@ import { ceres } from './bodies/ceres';
 import { eris } from './bodies/eris';
 import { makemake } from './bodies/makemake';
 import { haumea } from './bodies/haumea';
+import { guhagilford } from './bodies/guhagilford';
 
 export default {
-	name: 'SolarSystemDwarves',
-	title: 'Solar System with dwarf planets',
-	commonBodies: [
-		sun,
-		mercury,
-		venus,
-		earth,
-		mars,
-		jupiter,
-		saturn,
-		uranus,
-		neptune,
-		pluto,
-		halley,
-		eris,
-		ceres,
-		makemake,
-		haumea,
-	],
-	secondsPerTick: { min: 3600 * 5, max: 3600 * 25, initial: 3600 * 10 },
-	defaultGuiSettings: { 
-		planetScale: 10,
-	},
-	help: "This scenario shows all the planets of the Solar System plus dwarf planets. Also included is Halley's comet, but its orbit is an approximation, as I was not able to find its accurate orbital elements.",
+    name: 'SolarSystemDwarves',
+    title: 'Solar System with dwarf planets',
+    commonBodies: [
+        sun,
+        mercury,
+        venus,
+        earth,
+        mars,
+        jupiter,
+        saturn,
+        uranus,
+        neptune,
+        pluto,
+        halley,
+        eris,
+        ceres,
+        makemake,
+        haumea,
+        guhagilford,
+    ],
+    secondsPerTick: { min: 3600 * 5, max: 3600 * 25, initial: 3600 * 10 },
+    defaultGuiSettings: {
+        planetScale: 10,
+    },
+    help: "This scenario shows all the planets of the Solar System plus dwarf planets. Also included is Halley's comet, but its orbit is an approximation, as I was not able to find its accurate orbital elements.",
 };
